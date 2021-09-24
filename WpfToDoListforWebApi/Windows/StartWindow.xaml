@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfToDoListforWebApi.Windows.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfToDoListforWebApi.Windows"
+        mc:Ignorable="d"
+        Width="600" Height="150"
+        WindowStyle="None"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered">
+    <Border Background="#bbbbdd"
+            CornerRadius="30">
+
+        <Grid Width="550"
+              Height="140">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Height="50"
+               Background="Transparent"
+                   Foreground="#123400"
+               FontSize="25"
+            Content="Wait before your list of bussyness to load" Margin="35,25,35,25"/>
+            <ProgressBar x:Name="progrBar"
+                         Grid.Row="1"
+                         Width="500"
+                         Height="10"                                                                       
+                         >
+            </ProgressBar>
+
+
+        </Grid>
+    </Border>
+</Window>

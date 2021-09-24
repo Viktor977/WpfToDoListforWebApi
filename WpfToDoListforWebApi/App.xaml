@@ -1,0 +1,38 @@
+﻿<Application x:Class="WpfToDoListforWebApi.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfToDoListforWebApi"
+             xmlns:viewModel="clr-namespace:WpfToDoListforWebApi.MVVM.ModelViews"
+             xmlns:view="clr-namespace:WpfToDoListforWebApi.MVVM.Views"
+             xmlns:image="WpfToDoListforWebApi.Images"
+             xmlns:start="clr-namespace:WpfToDoListforWebApi.Windows"
+             xmlns:myenum="clr-namespace:WpfToDoListforWebApi.MVVM.Models"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/MunuButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:DislpyHomeView}">
+                <view:HomeView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:DisplylListToDoModel}">
+               <view:DisplyListToDo/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:DisplyCategoriesModel}">
+                <view:DisplyCategories/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type myenum:Priority}">
+               
+            </DataTemplate>
+               
+           
+        </ResourceDictionary>
+
+       
+    </Application.Resources>
+</Application>
