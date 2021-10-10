@@ -9,6 +9,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        
+        <ObjectDataProvider MethodName="GetValues"
+                            ObjectType="{x:Type core:Enum}" 
+                            x:Key="viewPrior" >
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enum:Priority"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+       
     
     <StackPanel>
         <DataGrid x:Name="dataGrid" AutoGenerateColumns="False"
@@ -17,11 +28,25 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Path=Id, Mode=TwoWay}" 
                                     IsReadOnly="False"  Foreground="Blue"/>
-                <DataGridTextColumn  Header="Prioritet" Binding="{Binding Path=Priority,Mode=TwoWay}"
-                                         >
+                <DataGridTemplateColumn  Header="Prioritets" Width="65">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Priority,Mode=TwoWay}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <ComboBox>
+                                <ComboBoxItem Content="Height"/>
+                                <ComboBoxItem Content="Normal"/>
+                                <ComboBoxItem Content="Low"/>
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn> 
+               
 
-                </DataGridTextColumn>
-                <DataGridTextColumn Header="Write what you need todo" Width="300" Binding="{Binding Path= Text, Mode=TwoWay}">
+                    <DataGridTextColumn Header="Write what you need todo" Width="200" Binding="{Binding Path= Text, Mode=TwoWay}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="TextWrapping" Value="Wrap"></Setter>
@@ -33,18 +58,18 @@
                 <DataGridTemplateColumn Header="Data stop" >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <DatePicker SelectedDate="{Binding Deadline}" BorderThickness="0" />
+                            <DatePicker SelectedDate="{Binding Deadline}" BorderThickness="0" DisplayDate="2021.09.01" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="mark" Binding="{Binding Path=Mark, Mode=TwoWay}"/>
             </DataGrid.Columns>
 
-            <DataGrid.RowDetailsTemplate>
+            <!--<DataGrid.RowDetailsTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Path=Text}"  Margin="10" />
                 </DataTemplate>
-            </DataGrid.RowDetailsTemplate>
+            </DataGrid.RowDetailsTemplate>-->
         </DataGrid>
         
         <StackPanel Orientation="Horizontal"

@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfToDoListforWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:WpfToDoListforWebApi.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Views.DisplyCategories">
+            <summary>
+            Interaction logic for DisplyCtegories.xaml
+            </summary>
+            <summary>
+            DisplyCategories
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MVVM.Views.DisplyCategories.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Views.DisplyListToDo">
+            <summary>
+            Interaction logic for DisplyListToDo.xaml
+            </summary>
+            <summary>
+            DisplyListToDo
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MVVM.Views.DisplyListToDo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Views.HomeView">
+            <summary>
+            Interaction logic for HomeView.xaml
+            </summary>
+            <summary>
+            HomeView
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MVVM.Views.HomeView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.ComentCategory">
+            <summary>
+            Interaction logic for ComentCategory.xaml
+            </summary>
+            <summary>
+            ComentCategory
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.ComentCategory.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.Windows.StartWindow">
+            <summary>
+            Interaction logic for StartWindow.xaml
+            </summary>
+            <summary>
+            StartWindow
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Windows.StartWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.WindowTextCategory">
+            <summary>
+            Interaction logic for WindowTextCategory.xaml
+            </summary>
+            <summary>
+            WindowTextCategory
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.WindowTextCategory.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

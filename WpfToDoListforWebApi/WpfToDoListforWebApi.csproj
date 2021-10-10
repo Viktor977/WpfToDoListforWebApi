@@ -6,6 +6,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>G:\ASP.Net Core\Projects\ClassWork12.09.2021\Stepanov(Exam_WebApi_Wpf_2)\WpfToDoListforWebApi\WpfToDoListforWebApi\WpfToDoListforWebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Images\coffee.jpg" />
     <None Remove="Images\dreem.jpg" />

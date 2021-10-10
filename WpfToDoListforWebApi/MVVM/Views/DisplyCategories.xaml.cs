@@ -78,19 +78,18 @@ namespace WpfToDoListforWebApi.MVVM.Views
                 await Task.Run(()=> {
 
                     _dispatcher.Invoke(new Action(() => {
-                                     
+
                         var item = dataGrid.SelectedItem as Categoria;
                         var client = new RestClient(url2+$"{item.Id}");
                         client.Timeout = -1;
                         var request = new RestRequest(Method.POST);
                         client.Execute(request);
                         MessageBox.Show($"Categoria by id={item.Id} deleted ");
-                    
+
                     }));
-                   
+
                 });
-                
-               
+
                 this.UserControl_Loaded(null, null);
             }
         }

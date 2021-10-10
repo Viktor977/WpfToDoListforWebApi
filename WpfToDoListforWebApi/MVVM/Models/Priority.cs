@@ -10,6 +10,6 @@ namespace WpfToDoListforWebApi.MVVM.Models
     {
         Hight,
         Normal,
-        Low
+        Low,
     }
 }
