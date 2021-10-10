@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WpfToDoListforWebApi.MVVM.Models
 {
+    /// <summary>
+    /// shows level priority
+    /// </summary>
     public enum Priority
     {
         Hight,

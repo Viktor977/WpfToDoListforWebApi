@@ -35,6 +35,51 @@
             InitializeComponent
             </summary>
         </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Models.Categoria">
+            <summary>
+            entity to create a category
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.Categoria.Id">
+            <summary>
+            id category
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.Categoria.NameCategory">
+            <summary>
+            name category(users settings)
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.Categoria.ListCategory">
+            <summary>
+            foreign key at the table "todolist"
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Models.Priority">
+            <summary>
+            shows level priority
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.Models.TodoList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.Text">
+            <summary>
+            this text general task
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.IsDone">
+            <summary>
+            marks were done or not
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.Mark">
+            <summary>
+            this point name category
+            </summary>
+        </member>
         <member name="T:WpfToDoListforWebApi.MVVM.Views.DisplyCategories">
             <summary>
             Interaction logic for DisplyCtegories.xaml
@@ -111,36 +156,6 @@
         <member name="M:WpfToDoListforWebApi.WindowTextCategory.InitializeComponent">
             <summary>
             InitializeComponent
-            </summary>
-        </member>
-        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
-            <summary>
-            GeneratedInternalTypeHelper
-            </summary>
-        </member>
-        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
-            <summary>
-            CreateInstance
-            </summary>
-        </member>
-        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
-            <summary>
-            GetPropertyValue
-            </summary>
-        </member>
-        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
-            <summary>
-            SetPropertyValue
-            </summary>
-        </member>
-        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
-            <summary>
-            CreateDelegate
-            </summary>
-        </member>
-        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
-            <summary>
-            AddEventHandler
             </summary>
         </member>
     </members>
