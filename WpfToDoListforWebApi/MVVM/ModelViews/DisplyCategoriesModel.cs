@@ -7,6 +7,9 @@ using WpfToDoListforWebApi.Core;
 
 namespace WpfToDoListforWebApi.MVVM.ModelViews
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DisplyCategoriesModel 
     {
     }

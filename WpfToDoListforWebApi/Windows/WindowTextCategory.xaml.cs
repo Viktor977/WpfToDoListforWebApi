@@ -22,35 +22,37 @@ namespace WpfToDoListforWebApi
     /// </summary>
     public partial class WindowTextCategory : Window
     {
-       
         private const string url1 = "https://localhost:44344/apiCategory/createCategoria";
-        public  TodoList todoList { get; set; }
-        public  WindowTextCategory()
+        /// <summary>
+        /// 
+        /// </summary>
+        public TodoList todoList { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public WindowTextCategory()
         {
             InitializeComponent();
         }
-       
-
-        private void save_Click(object sender, RoutedEventArgs e)
+        private void Save_Click(object sender, RoutedEventArgs e)
         {
-
-            var categoria = new Categoria() {
-
-
+            Categoria categoria = new()
+            {
                 NameCategory = text.Text,
                 ListCategory = todoList
             };
-            var item = JsonConvert.SerializeObject(categoria);
-            var client = new RestClient(url1);
-            client.Timeout = -1;
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("Content-Type", "application/json");
-            request.AddParameter("application/json",
+            string item = JsonConvert.SerializeObject(categoria);
+            RestClient client = new(url1)
+            {
+                Timeout = -1
+            };
+            RestRequest request = new RestRequest(Method.POST);
+            _ = request.AddHeader("Content-Type", "application/json");
+            _ = request.AddParameter("application/json",
             item, ParameterType.RequestBody);
-            client.Execute(request);
+            _ = client.Execute(request);
             Close();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();

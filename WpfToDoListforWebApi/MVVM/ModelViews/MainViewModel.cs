@@ -8,9 +8,15 @@ using WpfToDoListforWebApi.MVVM.Views;
 
 namespace WpfToDoListforWebApi.MVVM.ModelViews
 {
+    /// <summary>
+    /// 
+    /// </summary>
    public class MainViewModel:ObservableObjects
    {
         private object _currentView;
+        /// <summary>
+        /// 
+        /// </summary>
         public object CurrentView
         {
             get { return _currentView; }
@@ -20,13 +26,36 @@ namespace WpfToDoListforWebApi.MVVM.ModelViews
                 OnPropertyChanged();
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public HomeView homeView { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public DisplylListToDoModel displayToDo { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public DisplyCategoriesModel displycategory { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public RellayCommand DisplyHomeView { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public RellayCommand DisplayListToDoCommand { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
        
         public RellayCommand DisplyCategoryCommand { get; set; }
+        /// <summary>
+        /// Constructor  without parameters 
+        ///  which creates object 
+        /// with specified :HomeNiew,DisplayListToDoWiev,DisplyCategoriesModel 
+        /// </summary>
         public MainViewModel()
         {
             homeView = new HomeView();

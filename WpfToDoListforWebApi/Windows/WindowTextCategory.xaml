@@ -46,7 +46,7 @@
                 Width="100"              
                 Content="Save"
                 Background="Blue"
-                Click="save_Click"
+                Click="Save_Click"
                 >
 
         </Button>

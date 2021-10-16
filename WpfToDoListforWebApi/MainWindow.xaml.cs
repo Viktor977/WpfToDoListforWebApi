@@ -21,28 +21,27 @@ namespace WpfToDoListforWebApi
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
         }
-
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             try
             {
                 DragMove();
             }
-            catch
+            catch(Exception ex)
             {
-                ;
+                _ = MessageBox.Show(ex.Message);
             }
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
-        }
-
-       
+        }       
     }
 }

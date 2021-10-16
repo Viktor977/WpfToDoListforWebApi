@@ -24,8 +24,17 @@ namespace WpfToDoListforWebApi.MVVM.Models
         /// this point name category
         /// </summary>
         public string Mark { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public Priority Priority { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public DateTime CreationDate { get; set; } = DateTime.Now;
+        /// <summary>
+        /// 
+        /// </summary>
         public DateTime Deadline { get; set; }
 
     }

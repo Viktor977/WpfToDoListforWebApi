@@ -11,8 +11,17 @@ namespace WpfToDoListforWebApi.MVVM.Models
     /// </summary>
     public enum Priority
     {
+        /// <summary>
+        /// hight priority task
+        /// </summary>
         Hight,
+        /// <summary>
+        /// Medium task priority
+        /// </summary>
         Normal,
+        /// <summary>
+        /// low priority task
+        /// </summary>
         Low,
     }
 }

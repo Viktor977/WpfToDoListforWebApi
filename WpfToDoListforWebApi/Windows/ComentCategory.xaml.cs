@@ -21,6 +21,10 @@ namespace WpfToDoListforWebApi
     public partial class ComentCategory : Window
     {
         private List<TodoList> _todoList;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="todoList"></param>
         public ComentCategory(List<TodoList> todoList)
         {
             InitializeComponent();

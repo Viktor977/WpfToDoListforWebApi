@@ -8,9 +8,19 @@ using System.Threading.Tasks;
 
 namespace WpfToDoListforWebApi.Core
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ObservableObjects : INotifyPropertyChanged
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
         public void OnPropertyChanged([CallerMemberName] string name = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));

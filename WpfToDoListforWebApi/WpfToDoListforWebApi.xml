@@ -22,12 +22,63 @@
             Application Entry Point.
             </summary>
         </member>
+        <member name="T:WpfToDoListforWebApi.Core.ObservableObjects">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:WpfToDoListforWebApi.Core.ObservableObjects.PropertyChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Core.ObservableObjects.OnPropertyChanged(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="T:WpfToDoListforWebApi.Core.RellayCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:WpfToDoListforWebApi.Core.RellayCommand.CanExecuteChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Core.RellayCommand.#ctor(System.Action{System.Object},System.Func{System.Object,System.Boolean})">
+            <summary>
+            
+            </summary>
+            <param name="Execute"></param>
+            <param name="CanExecute"></param>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Core.RellayCommand.CanExecute(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Core.RellayCommand.Execute(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+        </member>
         <member name="T:WpfToDoListforWebApi.MainWindow">
             <summary>
             Interaction logic for MainWindow.xaml
             </summary>
             <summary>
             MainWindow
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MainWindow.#ctor">
+            <summary>
+            
             </summary>
         </member>
         <member name="M:WpfToDoListforWebApi.MainWindow.InitializeComponent">
@@ -60,6 +111,21 @@
             shows level priority
             </summary>
         </member>
+        <member name="F:WpfToDoListforWebApi.MVVM.Models.Priority.Hight">
+            <summary>
+            hight priority task
+            </summary>
+        </member>
+        <member name="F:WpfToDoListforWebApi.MVVM.Models.Priority.Normal">
+            <summary>
+            Medium task priority
+            </summary>
+        </member>
+        <member name="F:WpfToDoListforWebApi.MVVM.Models.Priority.Low">
+            <summary>
+            low priority task
+            </summary>
+        </member>
         <member name="T:WpfToDoListforWebApi.MVVM.Models.TodoList">
             <summary>
             
@@ -78,6 +144,83 @@
         <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.Mark">
             <summary>
             this point name category
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.Priority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.CreationDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.Models.TodoList.Deadline">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.ModelViews.DislpyHomeView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.ModelViews.DisplyCategoriesModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.ModelViews.DisplylListToDoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.CurrentView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.homeView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.displayToDo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.displycategory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.DisplyHomeView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.DisplayListToDoCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.DisplyCategoryCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.MVVM.ModelViews.MainViewModel.#ctor">
+            <summary>
+            Constructor  without parameters 
+             which creates object 
+            with specified :HomeNiew,DisplayListToDoWiev,DisplyCategoriesModel 
             </summary>
         </member>
         <member name="T:WpfToDoListforWebApi.MVVM.Views.DisplyCategories">
@@ -127,6 +270,12 @@
             ComentCategory
             </summary>
         </member>
+        <member name="M:WpfToDoListforWebApi.ComentCategory.#ctor(System.Collections.Generic.List{WpfToDoListforWebApi.MVVM.Models.TodoList})">
+            <summary>
+            
+            </summary>
+            <param name="todoList"></param>
+        </member>
         <member name="M:WpfToDoListforWebApi.ComentCategory.InitializeComponent">
             <summary>
             InitializeComponent
@@ -138,6 +287,11 @@
             </summary>
             <summary>
             StartWindow
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.Windows.StartWindow.#ctor">
+            <summary>
+            
             </summary>
         </member>
         <member name="M:WpfToDoListforWebApi.Windows.StartWindow.InitializeComponent">
@@ -153,9 +307,49 @@
             WindowTextCategory
             </summary>
         </member>
+        <member name="P:WpfToDoListforWebApi.WindowTextCategory.todoList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WpfToDoListforWebApi.WindowTextCategory.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:WpfToDoListforWebApi.WindowTextCategory.InitializeComponent">
             <summary>
             InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
             </summary>
         </member>
     </members>

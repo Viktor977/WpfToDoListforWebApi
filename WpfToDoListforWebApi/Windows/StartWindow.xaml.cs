@@ -20,24 +20,21 @@ namespace WpfToDoListforWebApi.Windows
     /// </summary>
     public partial class StartWindow : Window
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public StartWindow()
         {
-            InitializeComponent();          
-            progrBar.Maximum =500;
-          
+            InitializeComponent();
+            progrBar.Maximum = 500;
         }
-
-       
-        
-
         private void Window_ContentRendered(object sender, EventArgs e)
         {
-             progrBar.Value = 1;
+            progrBar.Value = 1;
 
             while (progrBar.Value < 490)
             {
                 progrBar.Value++;
-               
             }
         }
     }
